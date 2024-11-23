@@ -1,11 +1,12 @@
 Package: Rpkg.exam
 Type: Package
-Title: What the Package Does (Title Case)
+Title: R package to get by through the course
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Petr Houska
+Maintainer: The package maintainer <p.houska@gmail.com>
+Description: 
+    This package serves the sole purpose of getting me through the course Intermediate R
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.3.2
