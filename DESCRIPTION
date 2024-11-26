@@ -4,6 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Petr", "Houska", , "p.houska@gmail.com", role = c("aut", "cre"))
 <<<<<<< HEAD
+<<<<<<< HEAD
 Description:     This package serves the sole purpose of getting me through the course Intermediate R
     On linux you might have to install libmagick++-dev
     Usage of this is package
@@ -16,6 +17,9 @@ Description:     This package serves the sole purpose of getting me through the 
 =======
 Description: This package installs function Rgreyscale and Rsplit to be used by the user. See their description.
 >>>>>>> 6808564 (new description file)
+=======
+Description: This package installs function Rgreyscale and Rsplit to be used by the user. See their description.
+>>>>>>> b1644ed (new description file)
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
