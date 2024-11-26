@@ -1,8 +1,11 @@
-#' @description this functions prints all three parts of RGB picture and returns them as list for futher work
-#' @param imageFile
+#' @title Rsplit
+#' @description this functions prints all three parts of RGB picture and returns them as list for futher work; you need imagemagick installed, if you want to print the image, you need ggplot2
+#' @param imageFile  path to image to be converted to list of pictures (original picture and one per R G B channel)
 #' @examples myList <- Rsplit("path_to_imageFile")
 #'
-#' you need imagemagick installed, if you want to print the image, you need ggplot2
+#' @return returns a list of images
+#' @export
+
 
 
 Rsplit <- function(imageFile) {
@@ -11,7 +14,14 @@ Rsplit <- function(imageFile) {
   imageObj <- Rloadimage(imageFile)
   imageBitmap <- imageObj[[1]]
   imageBitmapR <- imageBitmap[1,,,drop=F]
-  imageR <- image_read(imageBitmapR)
+  imageChannelR <- image_read(imageBitmapR)
+
+  imageR <- image_merge(
+    imageChannelR,
+    image_blank(width = image_info(imageObj)$width, height = image_info(imageObj)$height, color = "black"),
+    image_blank(width = image_info(imageObj)$width, height = image_info(imageObj)$height, color = "black")
+  )
+
   imageBitmapG <- imageBitmap[2,,,drop=F]
   imageG <- image_read(imageBitmapG)
   imageBitmapB <- imageBitmap[3,,,drop=F]

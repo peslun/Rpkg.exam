@@ -7,14 +7,11 @@ Maintainer: The package maintainer <p.houska@gmail.com>
 Description: 
     This package serves the sole purpose of getting me through the course Intermediate R
     On linux you might have to install libmagick++-dev
-    
     Usage of this is package:
     grayscale_image <- Rgrayscale("path to an image")
       gives an grayscale image of submitted image
-
     split_image <- Rsplit("path to an image")  
       gives a named list of images, that can be accessed ie. through split_image$RGB
-      
     test image is provided in samples/Test image-1.jpg
     try i.e. print(grayscale_image) or print(split_image$R)
 License: MIT + file LICENSE

@@ -1,6 +1,7 @@
+#' @title Rloadimage
 #' @description this should be internal function to load the image to use with other functions
-#' @param imageFile
-#' @examples myBitmap <- Rloadimage("path_to_imageFile")
+#' @param imageFile path to the image
+#' @examples myObject <- Rloadimage("path_to_imageFile")
 #'
 #' you need imagemagick installed, if you want to print the image, you need ggplot2
 
