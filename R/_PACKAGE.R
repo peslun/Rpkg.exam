@@ -1,10 +1,11 @@
 #' Rpkg Exam Package
 #'
-#' This package installs function Rgreyscale and Rsplit to be used by the user. See their description.
+#' This package is to get me through the exam.
 #'
 #' @name Rpkg.exam
 #' @import magick
-#' @description
+#' @examples
+
 #' Use this function
 #'   apply_filter("samples/Test image-1.jpg","grayscale")
 #'   apply_filter("samples/Test image-1.jpg","cutoff") #defaults to cutoff 127
