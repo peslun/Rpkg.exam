@@ -11,7 +11,11 @@
 
 
 apply_filter <- function(image_file, filter_func, cutoff = 127) {
+<<<<<<< HEAD
 
+=======
+  require(magick)
+>>>>>>> 081282f (require magick)
   # Read the image file and extract the bitmap
   image_bitmap <- image_read(image_file)[[1]]
   image_numvec <- as.numeric(image_bitmap)
