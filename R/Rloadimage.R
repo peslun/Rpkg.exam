@@ -10,5 +10,11 @@ Rloadimage <- function(imageFile) {
   require("magick")
   imageObj <- image_read(imageFile)
 #  print(imagObj)
-  return(imageObj)
+
+
+
+
+    return(imageObj)
+
 }
+
